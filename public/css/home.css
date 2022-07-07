@@ -1,0 +1,107 @@
+.home__body{
+
+}
+
+/* Header */
+.home__body__header{
+    background-color: var(--c_yellow);
+    padding-bottom: 15px;
+    text-align: center;
+}
+.home__body__header--logo{
+    width: 50%;
+    padding: 15px;
+    
+}
+.home__body__header form{
+    padding-left: 15px;
+    padding-bottom: 5px;
+}
+
+.home__body__header__payment{
+    text-align: center;
+    padding: 5px ;
+}
+.home__body__header__nav ul{
+    padding: 10px;
+    text-align: left;
+}
+#burger{
+    background-color: var(--c_light_blue);
+    display: flex;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#burger i{
+    font-size: 25px;
+    color: white;
+}
+
+
+/* Main */
+.home__body__main{
+    background-color: var(--c_light_gray);
+    padding-bottom: 10px;
+}
+.home__body__main h3{
+    margin-top: 0 ;
+    margin-left: 5%;
+    padding: 10px 0;
+}
+.home__body__main article{
+    margin: 10px 5%;
+    width: 90%;
+}
+.home__body__main img{
+    text-align: center;
+    background-color: white;
+    width: 100%;
+}
+.home__body__main div{
+    background-color: white;
+    padding: 15px;
+}
+.home__body__main div i{
+    color: var(--c_green);
+    padding: 10px;
+    border: solid 1px var(--c_green);
+    border-radius: 50%;
+    margin-bottom: 5px;
+}
+
+.home__body__main__section--articles--price{
+    font-size: var(--fs_price);
+}
+.home__body__main__section--articles--discount{
+    font-size: var(--fs_discount__description);
+    color: var(--c_green);
+}
+.home__body__main__section--articles--description{
+    font-size: var(--fs_discount__description);
+}
+.home__body__main__section--off p{
+    font-family: var(--fs_discount__description);
+}
+.home__body__main__section--articles--off--discount{
+    color: var(--c_green);
+}
+/* Footer */
+.home__body__footer{
+    text-align: center;
+}
+.home__body__footer i{
+    font-size: var(--fs_title);
+    color: var(--c_light_blue);
+    margin: 5px;
+}
+.home__body__footer h4{
+    font-size: var(--fs_discount__description);
+}
+.home__body__footer div{
+    margin: 35px;
+}

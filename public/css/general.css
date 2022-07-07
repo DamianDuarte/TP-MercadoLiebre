@@ -1,0 +1,44 @@
+:root
+{
+    /** Color */
+    --c_yellow: #EAC926;
+    --c_blue: #03264C;
+    --c_light_blue: #1259c3;
+    --c_dark_gray: #666;
+    --c_light_gray: #ebebeb;
+    --c_green: #39b54a;
+
+    /** Font Family */
+    --f_general: 'Roboto';
+
+    /** Font Size */
+    --fs_body: 12px;
+    --fs_title: 24px;
+    --fs_price: 18px;
+    --fs_discount__description: 16px;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+  }
+
+body{
+    font-family: var(--f_general);
+    font-size: var(--fs_body);
+}
+li{
+    list-style: none;
+    
+}
+
+ul, ol {
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+h3{
+    font-size: var(--fs_title);
+}
