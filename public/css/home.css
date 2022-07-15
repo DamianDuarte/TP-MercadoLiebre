@@ -11,31 +11,40 @@
 .home__body__header--logo{
     width: 50%;
     padding: 15px;
-    
+    display: flex;
+    align-items: flex-start;
 }
 .home__body__header form{
     padding-left: 15px;
     padding-bottom: 5px;
+    display: flex;
+    align-items: flex-start;
 }
 
 .home__body__header__payment{
     text-align: center;
-    padding: 5px ;
+    padding-top: 5px ;
+    padding-bottom: 20px;
 }
 .home__body__header__nav ul{
     padding: 10px;
     text-align: left;
+    display: none;
+}
+.home__body__header__nav{
+    padding-bottom: 20px;
 }
 #burger{
     background-color: var(--c_light_blue);
     display: flex;
-    width: 50px;
+    width: 48px;
     height: 50px;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
     margin-left: auto;
     margin-right: auto;
+    
 }
 #burger i{
     font-size: 25px;
@@ -44,6 +53,7 @@
 
 
 /* Main */
+
 .home__body__main{
     background-color: var(--c_light_gray);
     padding-bottom: 10px;
@@ -52,10 +62,12 @@
     margin-top: 0 ;
     margin-left: 5%;
     padding: 10px 0;
+    color: var(--c_dark_gray);
 }
 .home__body__main article{
     margin: 10px 5%;
     width: 90%;
+
 }
 .home__body__main img{
     text-align: center;
@@ -83,7 +95,10 @@
 }
 .home__body__main__section--articles--description{
     font-size: var(--fs_discount__description);
+    color: var(--c_dark_gray);
+    display: none;
 }
+
 .home__body__main__section--off p{
     font-family: var(--fs_discount__description);
 }
@@ -105,3 +120,39 @@
 .home__body__footer div{
     margin: 35px;
 }
+
+/* TABLET */
+
+@media(min-width: 768px){
+
+    /* Header */
+    .home__body__header__nav ul{
+        padding: 10px;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+    }
+    #burger{
+        display: none;
+        
+    }
+    /* Main */
+.home__body__main__section--articles{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+.home__body__main__section--articles div{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+.home__body__main__section--articles--discount{
+    padding-bottom: 20px;
+}
+.home__body__main__section--articles--description{
+    font-size: var(--fs_discount__description);
+    color: var(--c_dark_gray);
+    display: flex;
+}
+}
+
+/* DESKTOP */
+
+@media(min-width: 1024px)
