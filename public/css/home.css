@@ -76,22 +76,43 @@
 }
 .home__body__main div{
     background-color: white;
-    padding: 15px;
-}
-.home__body__main div i{
-    color: var(--c_green);
     padding: 10px;
-    border: solid 1px var(--c_green);
-    border-radius: 50%;
-    margin-bottom: 5px;
 }
+
+.home__body__main__section--description{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.home__body__main__section--description i{
+        display: block;
+        font-size: 16px;
+        padding: 5px;
+        width: 30px;
+        height: 30px;
+        border: 1px solid var(--c_green);
+        background-color: #fff;
+        border-radius: 50%;
+        position: absolute;
+        right: 20px;
+        top: -15px;
+        color: var(--c_green);
+        
+}
+
 
 .home__body__main__section--articles--price{
     font-size: var(--fs_price);
+    width: 30%;
+    
 }
 .home__body__main__section--articles--discount{
     font-size: var(--fs_discount__description);
     color: var(--c_green);
+    width: 70%;
 }
 .home__body__main__section--articles--description{
     font-size: var(--fs_discount__description);
@@ -125,7 +146,7 @@
 
 @media(min-width: 768px){
 
-    /* Header */
+/* Header */
     .home__body__header__nav ul{
         padding: 10px;
         text-align: left;
@@ -136,15 +157,23 @@
         display: none;
         
     }
-    /* Main */
+/* Main */
+
+.home__body__main__section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.home__body__main article{
+    width: 40%;
+}
+
 .home__body__main__section--articles{
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);    
 }
-.home__body__main__section--articles div{
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
-}
-.home__body__main__section--articles--discount{
-    padding-bottom: 20px;
+.home__body__main__section--articles--description{
+    padding: 10px 0;
 }
 .home__body__main__section--articles--description{
     font-size: var(--fs_discount__description);
@@ -156,5 +185,12 @@
 /* DESKTOP */
 
 @media(min-width: 1024px){
+    .home__body__main article{
+        margin: 15px 20px;
+        width: 20%;
+    }
     
+    .home__body__main__section--articles--discount{
+        padding-left: 15%;
+}
 }
