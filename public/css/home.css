@@ -8,29 +8,56 @@
     padding-bottom: 15px;
     text-align: center;
 }
-.home__body__header--logo{
-    width: 50%;
-    padding: 15px;
+
+.home__body__header--container{
     display: flex;
-    align-items: flex-start;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
+
+.home__body__header a{
+    width: 50%;
+}
+.home__body__header--logo{
+    width: 100%;
+    padding: 5px;
+}
+
 .home__body__header form{
-    padding-left: 15px;
-    padding-bottom: 5px;
     display: flex;
-    align-items: flex-start;
+    border-radius: 5px;
+    height: 32px;
+    padding: 5px;
+    background-color: #fff;
+    width: 45%;
+    margin: 5px;
+}
+
+.home__body__header input{
+    border: none;
+    width: 85%;
+}
+
+.home__body__header button{
+    width: 15%;
+    border: none;
+    background-color: #fff;
+    color: var(--c_dark_gray);
 }
 
 .home__body__header__payment{
     text-align: center;
     padding-top: 5px ;
     padding-bottom: 20px;
+    
 }
 .home__body__header__nav ul{
     padding: 10px;
     text-align: left;
     display: none;
 }
+
 .home__body__header__nav{
     padding-bottom: 20px;
 }
@@ -147,12 +174,70 @@
 @media(min-width: 768px){
 
 /* Header */
-    .home__body__header__nav ul{
-        padding: 10px;
-        text-align: left;
+/* Header principal */
+.home__body__header--total{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    padding: 15px;
+    align-items: center;
+}
+.home__body__header--container{
+    width: 68%;
+    align-items: center;
+}
+
+.home__body__header form{
+    width: 47%;
+    background-color: var(--c_yellow);
+}
+
+.home__body__header input{
+    border: solid 1px var(--c_light_gray);
+    width: 85%;
+    margin-right: 2px;
+    border-radius: 2px;
+}
+
+.home__body__header button{
+    width: 10%;
+    border: solid 1px var(--c_light_gray);
+    background-color: #fff;
+    color: var(--c_dark_gray);
+    border-radius: 4px;
+    
+}
+
+.home__body__header--total a{
+    width: 50%;
+}
+
+.home__body__header--logo{
+    width: 100%;
+}
+
+.home__body__header--total p{
+    width: 32%;
+    padding: 0;
+}
+/* Header nav */
+    .home__body__header__nav{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px 20px 0;
     }
+
+    .home__body__header__nav ul{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .home__body__header__nav ul li a{
+        padding: 13px 5px;
+    }
+
     #burger{
         display: none;
         
