@@ -1,0 +1,134 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="https://kit.fontawesome.com/da8f9c3d94.js" crossorigin="anonymous"></script> <!-- Icons -->
+    <script src="/components/header.js" type="text/javascript" defer></script>
+    <script src="/components/footer.js" type="text/javascript" defer></script>
+    <title>Mercado liebre - Crea tu cuenta</title>
+</head>
+<body class="register">
+    <header class="home__body__header">
+        <div class="home__body__header--total">
+        <div class="home__body__header--container">
+        <a href="/"><img class="home__body__header--logo" src="images/logo-mercado-liebre.svg" alt=""></a>
+        <form action="">
+            <input type="text" placeholder="Buscar productos, marcas" name="searchInput" id="searchBar">
+            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+        </div>
+        <p class="home__body__header__payment"><i class="fa-solid fa-hand-holding-dollar"></i>Comprá en cuotas y sin
+            tarjeta de credito</p>
+        </div>
+        <nav class="home__body__header__nav">
+            <ul>
+                <li><a href="https://www.mercadolibre.com.ar/ofertas">Ofertas</a></li>
+                <li><a href="https://www.mercadolibre.com.ar/tiendas-oficiales">Tiendas Oficiales</a></li>
+                <li><a href="https://www.mercadolibre.com.ar/publicar/hub">Vender</a></li>
+                <li><a href="https://www.mercadolibre.com.ar/ayuda">Ayuda</a></li>
+            </ul>
+            <ul>
+                <li><a href="/register">Creá tu cuenta <i
+                    class="fa-solid fa-id-card"></i></a></li>
+                <li><a
+                        href="/login">
+                        Ingresá <i class="fa-solid fa-right-to-bracket"></i></a></li>
+                <li><a href="https://myaccount.mercadolibre.com.ar/my_purchases/list">Mis compras <i
+                    class="fa-solid fa-basket-shopping"></a></i>
+                </li>
+            </ul>
+            <div id="burger"><i class="fa-solid fa-bars"></i></div>
+        </nav>
+    </header>
+    <main class="register__main">
+        <form class="register__main__form" action="/">
+            <h1>Crea tu cuenta</h1>
+            <input type="text" name="nombreApellido" placeholder="Nombre y apellido" required minlength="3">
+            <p class="register__main__form--error">Nombre y apellido no puede contener números o símbolos.</p>
+            <input type="text" name="nombreUsuario" placeholder="Nombre de usuario" required minlength="3">
+            <p class="register__main__form--error">Nombre de usuario ocupado.</p>
+            <div class="register__main__form__password">
+                <input type="password" name="pass1" placeholder="Contraseña" minlength="5" required>
+                <input type="password" name="pass2" placeholder="Repetir contraseña" minlength="5" required>
+            </div>
+            <p class="register__main__form--error">Contraseña demasiado débil o no coinciden.</p>
+            <input type="email" name="email" placeholder="Email" minlength="3" required>
+            <p class="register__main__form--error">Dirección de email ya ocupada.</p>
+            <input type="file" name="pfp" id="pfp" hidden>
+            <label class="register__main__form__pfp" for="pfp">Sube una imágen de perfil</label>
+            <p class="register__main__form--error">Imágen de perfil pesa más de 5 MB.</p>
+            <h4>Fecha de nacimiento</h4>
+            <input type="date" name="fechaNacimiento" required>
+            <p class="register__main__form--error">No eres mayor de edad.</p>
+            <input type="text" name="domicilio" placeholder="Domicilio" required>
+            <p class="register__main__form--error">Ahora sé donde vives.</p>
+            
+            <h4>Perfil de usuario</h4>
+            <div class="register__main__form__radiolist">
+                <div class="register__main__form__choice">
+                    <input type="radio" name="perfil" value="0" id="comprador">
+                    <label for="comprador">Comprador</label>
+                </div>
+                <div class="register__main__form__choice">
+                    <input type="radio" name="perfil" value="1" id="vendedor">
+                    <label for="vendedor">Vendedor</label>
+                </div>
+                <p class="register__main__form--error">Debes seleccionar una opción.</p>
+            </div>
+            
+            <h4>Intereses</h4>
+            <div class="register__main__form__checklist">
+                <div class="register__main__form__choice">
+                    <input type="checkbox" name="interes" value="electro" id="electro">
+                    <label for="electro">Electro</label>
+                </div>
+                <div class="register__main__form__choice">
+                    <input type="checkbox" name="interes" value="moda" id="moda">
+                    <label for="moda">Moda</label>
+                </div>
+                <div class="register__main__form__choice">
+                    <input type="checkbox" name="interes" value="hogar" id="hogar">
+                    <label for="hogar">Hogar</label>
+                </div>
+                <div class="register__main__form__choice">
+                    <input type="checkbox" name="interes" value="jugueteria" id="jugueteria">
+                    <label for="jugueteria">Jugueteria</label>
+                </div>
+                <div class="register__main__form__choice">
+                    <input type="checkbox" name="interes" value="vidaSana" id="vidaSana">
+                    <label for="vidaSana">Vida sana</label>
+                </div>
+            </div>
+            
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar datos">
+        </form>
+    </main>
+
+    <footer class="home__body__footer">
+        <div class="home__body__footer__div--payment">
+            <i class="fa-solid fa-credit-card"></i>
+            <h4>Pagá con tarjeta o en efectivo</h4>
+            <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es
+            seguro!</p>
+        </div>
+        <div class="home__body__footer__div--shipping">
+            <i class="fa-solid fa-gift"></i>
+            <h4>Envío gratis desde $ 2.500</h4>
+            <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en mlies de
+                productos. Es un beneficio de Mercado Puntos.</p>
+        </div>
+        <div class="home__body__footer__div--security">
+            <i class="fa-solid fa-user-shield"></i>
+            <h4>Seguridad, de principio a fin</h4>
+            <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
+                porque estás siempre protegid@.</p>
+        </div>
+        <p>Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
+
+    </footer>
+
+</body>
+</html>
