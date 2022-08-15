@@ -270,10 +270,11 @@
 /* DESKTOP */
 
 @media(min-width: 1024px){
-    .home__body__main article{
-        margin: 15px 20px;
-        width: 20%;
-    }
+
+.home__body__main article{
+    width: 20%;
+    margin: 25px;
+}
     
     .home__body__main__section--articles--discount{
         padding-left: 15%;
